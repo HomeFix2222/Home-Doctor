@@ -38,11 +38,13 @@ export default function Home() {
 
         </nav>
 
-        <a className="button small" href="#account">
+        <a className="button small" href="/auth">
+  Login / Sign up
+</a>
 
-          Login / Sign up
+        
 
-        </a>
+    
 
       </header>
 
