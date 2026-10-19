@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #18251f;
+  background: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 6%;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.brand span:last-child {
+  color: #168653;
+}
+
+.logo {
+  color: #168653;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #168653;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.small {
+  padding: 10px 14px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 75px 8%;
+  background: #f1f8f3;
+}
+
+.heroText {
+  max-width: 620px;
+}
+
+.eyebrow {
+  color: #168653;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  margin: 18px 0;
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 1.1;
+}
+
+.sub {
+  max-width: 530px;
+  color: #617067;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.search input {
+  min-width: 220px;
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #d8e1da;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+  color: #52665a;
+  font-size: 13px;
+}
+
+.heroArt {
+  display: flex;
+  min-width: 220px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.workerEmoji {
+  font-size: 110px;
+}
+
+.bubble {
+  padding: 18px 25px;
+  border-radius: 15px;
+  background: white;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.5;
+  box-shadow: 0 8px 30px #173f2510;
+}
+
+.section {
+  padding: 65px 8%;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: clamp(27px, 3vw, 40px);
+}
+
+.sectionTitle > p,
+.service p,
+.steps p,
+.join p,
+.account p {
+  color: #68756c;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.service,
+.accountGrid article {
+  padding: 25px;
+  border: 1px solid #e5ebe6;
+  border-radius: 14px;
+  background: white;
+}
+
+.icon {
+  font-size: 35px;
+}
+
+.service h3 {
+  margin-bottom: 8px;
+}
+
+.service a {
+  color: #168653;
+  font-weight: 700;
+}
+
+.band {
+  padding: 65px 8%;
+  background: #f1f8f3;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.steps b {
+  display: inline-grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 50%;
+  background: #168653;
+  color: white;
+}
+
+.join {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.account {
+  background: #fafcfb;
+}
+
+.accountGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.notice {
+  margin-top: 25px;
+  font-size: 13px;
+}
+
+footer {
+  padding: 40px 8%;
+  background: #14271d;
+  color: white;
+}
+
+.light {
+  color: white;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+footer p,
+footer small {
+  color: #d2ded5;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 45px 6%;
+  }
+
+  .heroArt {
+    min-width: 0;
+  }
+
+  .section,
+  .band {
+    padding: 45px 6%;
+  }
+
+  .sectionTitle,
+  .join {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .accountGrid {
+    grid-template-columns: 1fr;
+  }
+}
