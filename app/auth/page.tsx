@@ -59,7 +59,7 @@ export default function AuthPage() {
 
         if (error) throw error;
 
-        window.location.href = "/";
+        window.location.href = "/dashboard";
       }
     } catch (err) {
       setMessage(
